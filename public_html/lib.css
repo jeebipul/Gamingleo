@@ -1,0 +1,390 @@
+.btn {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
+.btn::-moz-focus-inner,.btn::-webkit-focus-inner,.btn::focus-inner,.btn:focus {
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+
+/*MAIN CODE*/
+*{
+    box-sizing: border-box;
+    font-size: 16pt;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #961432;
+    font-family: 'Saira Condensed',sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #6f0c23;
+}
+.btn-medium{
+    font-size: 14pt;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.btn-small{
+    font-size: 12pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+header{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #961432;
+    font-family: 'Saira Condensed',sans-serif;
+    font-size: 20pt;
+    user-select: none;
+    cursor: default;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+header.ucase{
+    text-transform: uppercase;
+}
+header.hr-after:after{
+    display: inline;
+    position: absolute;
+    overflow-x: hidden;
+    content: '';
+    width: 80%;
+    margin-top:1.1em;
+    margin-left: 0.3em;
+    border-bottom: 2px solid #961432;
+}
+.p-text{
+    font-size: 14pt;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+div.jumbotron, div.jumbotron-fluid{
+    background-color: #e5e6e7;
+    color: #0a3c64;
+    font-family: 'Saria Condensed', sans-serif;
+    border-color: rgb(110, 120, 130);
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+div.jumbotron{
+    margin: 0;
+    width: 100%;
+}
+div.jumbotron-fluid{
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.h-center{
+    position: relative;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+div.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0;
+}
+.top-decor{
+    border-top: 5px solid #961432;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.top-decor.theme{
+    border-top: 5px solid #961432;
+}
+div.jumbotron > .top
+div.jumbotron > small{
+    color: dimgrey;
+    text-decoration: underline;
+    font-size: 10pt;
+}
+div.jumbotron > .content{
+    color: #6e7882;
+    background-color: #fff;
+    border-radius: 1px;
+    padding: 10px;
+    width: 100%;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+input.form-control{
+    padding: 10px;
+    width: 100%;
+    font-size: 16pt;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #fff;
+    color: darkgrey;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+}
+input.form-control:focus{
+    border: 1px solid #0a3c64;
+    outline: none;
+    color: #0a3c64;
+}
+input.form-control.theme:focus{
+    border: 1px solid #961432;
+    outline: none;
+    color: #961432;
+}
+div.carousel{
+    display: inline-block;
+    position: relative;
+}
+div.carousel.full-width{
+    width: 100%;
+}
+div.carousel > .sign{
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    font-size: 20pt;
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+div.carousel > .sign.top{
+    top: 10px;
+    bottom: initial;
+}
+div.carousel > .sign.bottom{
+    top: initial;
+    bottom: 10px;
+}
+div.carousel > .sign.classic{
+    background-color: #fff;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+div.carousel > .sign.classic:hover{
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+div.carousel > .sign.theme{
+    background-color: transparent;
+    color: #fff;
+}
+div.carousel > .sign.theme:hover{
+    color: #961432;
+    background-color: #fff;
+}
+div.carousel > .sign-left{
+    left: 10px;
+}
+div.carousel > .sign-right{
+    right: 10px;
+}
+div.carousel > .content{
+    display: block;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+div.carousel > .content.theme{
+    background-color: #6e0a28;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+div.carousel > .content > section{
+    display: none;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+div.carousel > .content > section > img{
+    max-width: 100%;
+    height: auto;
+}
+div.carousel > header{
+    display: block;
+    top: 0;
+    padding: 5px;
+    width: 100%;
+}
+div.carousel > header.theme{
+    background-color: #961432;
+    color: #fff;
+    font-size: 12pt;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+div.image-container{
+    position: relative;
+    margin: 0 auto;
+    background-color: #c9ccd2;
+    width: 25%;
+    padding-bottom: 14.06%;
+}
+div.image-container.x2{
+    width: 50%;
+    padding-bottom: 28.13%;
+}
+div.image-container.x3{
+    width: 75%;
+    padding-bottom: 42.19%;
+}
+div.image-container.x4{
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+div.image-container > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+    filter: brightness(90%);
+}
+div.image-container > img:hover{
+    filter: brightness(100%);
+}
+div.spinner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%,-50%);
+}
+div.spinner > .spinner-body::before, div.spinner > .spinner-body::after{
+    content: '';
+    position: absolute;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 2.562rem;
+    border: .1875rem solid #6e0a28;
+    transform: scale(0);
+    opacity: 1;
+    animation-duration: 2s;
+    animation-name: loading;
+    animation-iteration-count: infinite;
+}
+div.spinner > .spinner-body::before{
+    animation-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+div.spinner > .spinner-body::after{
+    animation-delay: 0.9s;
+    animation-timing-function: cubic-bezier(.3,.61,.355,1);
+}
+@keyframes loading{
+    from{transform:scale(0);opacity:1}to{transform:scale(1);opacity:0}
+}
+div.image-container > .caption{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 6px;
+    font-family: 'Saira Condensed',sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: #fff;
+    pointer-events: none;
+}
+div.image-container > .caption > small{
+    display: block;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    line-height: 1.375rem;
+}
+
+form.form-control{
+    display: block;
+}
+form.form-control > .form-control{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[type=password].form-control{
+    position: relative;
+}
+.password-control{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.password-control > input[type=password].form-control{
+    width: calc(100% - 47px);
+}
+.password-control > .revealer{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 47px;
+    height: 47px;
+    margin: 0;
+    padding: 2px;
+    background-color: #e0e0e0;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16pt;
+    line-height: 47px;
+    cursor: pointer;
+}
+.password-control > .revealer:hover{
+    background-color: lightgray;
+}
